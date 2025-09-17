@@ -1,0 +1,63 @@
+## Note:
+## Get popular plugins here: 
+## https://github.com/topics/zsh-plugins
+##
+## Some author's plugin selection for reference:
+## https://github.com/mattmc3/zdotdir
+## https://github.com/getantidote/zdotdir
+##
+## Packages are installed at $ANTIDOTE_HOME
+## 
+## kind:defer can be used for parallel loading UI / interactive features
+##
+## Options:
+## 1. Zsh-users Autosuggestions, Syntax Highlighting (zsh-s-h / fast-s-h), fzf-tab
+## 2. Marlonrichert Autocomplete, Syntax Highlighting (zsh-s-h / fast-s-h)
+##
+## For settings directory, naming schema is as follows:
+## - zsh-users/zsh-autosuggestions                        => zsh-users/zsh-autosuggestions.zsh
+## - sindresorhus/pure kind:fpath                         => sindresorhus/pure.zsh
+## - ohmyzsh/ohmyzsh path:lib                             => ohmyzsh/ohmyzsh/lib.zsh
+## - ohmyzsh/ohmyzsh path:plugins/command-not-found       => ohmyzsh/ohmyzsh/plugins/command-not-found.zsh
+
+
+## IN USE
+zsh-users/zsh-autosuggestions kind:defer                  # Suggest commands
+zsh-users/zsh-syntax-highlighting                         # Syntax highlight (not deferred due to self defined theme)
+Aloxaf/fzf-tab                                            # Completions menu
+
+fdellwing/zsh-bat                                         # cat with colors (Use rcat for original) [rq: bat]
+zsh-users/zsh-history-substring-search kind:defer         # Easier history search
+
+getantidote/use-omz                                       # OMZ's dependency standardizer (https://github.com/getantidote/use-omz)
+ohmyzsh/ohmyzsh path:plugins/command-not-found            # Recommends installation if command not found
+ohmyzsh/ohmyzsh path:plugins/magic-enter                  # Provides use for empty input
+ohmyzsh/ohmyzsh path:plugins/extract                      # Dynamically extract files
+ohmyzsh/ohmyzsh path:plugins/colored-man-pages            # Vibrant man pages
+ohmyzsh/ohmyzsh path:plugins/dirhistory                   # ALT + arrows to change between directories
+ohmyzsh/ohmyzsh path:plugins/copypath                     # Copies $1's abs path
+ohmyzsh/ohmyzsh path:plugins/copyfile                     # Copies $1's file content
+ohmyzsh/ohmyzsh path:plugins/fancy-ctrl-z                 # Switch between background and foreground tasks
+
+zsh-users/zsh-completions path:src kind:fpath             # Additional completions for commands
+
+romkatv/zsh-bench kind:path                               # Benchmark
+
+
+## UNUSED
+# marlonrichert/zsh-autocomplete kind:defer               # Provides autocompletion and completion-menu, also conflicts with them
+# zdharma-continuum/fast-syntax-highlighting kind:defer   # Extended, faster zsh-syntax-highlighting
+# zsh-users/zsh-history-substring-search kind:defer       # Easier history search
+
+# sindresorhus/pure kind:fpath                            # A zsh prompt style
+# romkatv/powerlevel10k kind:fpath                        # Another zsh prompt style
+# spaceship-prompt/spaceship-prompt                       # Another another zsh prompt style
+# ohmyzsh/ohmyzsh path:plugins/themes                     # Use OMZ themes
+
+# matthiasha/zsh-uv-env                                   # Auto checks uv project and activates the venv
+# lukechilds/zsh-nvm                                      # nvm - Node Version Manager
+
+# ohmyzsh/ohmyzsh path:lib                                # OMZ's lib, use it if some of your omz plugins have issues
+# mattmc3/zephyr                                          # Same author as antidote, similar to ohmyzsh's plugins, and simpler
+
+# jeffreytse/zsh-vi-mode                                  # Vim keybinds for terminal
