@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 # NOTE: Inherited from kali default prompt settings (updated and documented)
-# Just a tutorial for creating custom prompt styles (or if you want to use it)
+# Just a tutorial for creating custom prompt styles (or if you want to use it, just rename and unhide it)
 # Not used (Name starts with '.', is hidden) and can be removed safely
 
 # Prompt format

@@ -1,6 +1,7 @@
-# My zsh config
+# My ZSH Config
 
 My zsh configurations using the [antidote](https://github.com/mattmc3/antidote) plugin manager.
+Documentations and relevant resources are available within the code.
 
 Current functionalities include:
 
@@ -18,7 +19,7 @@ Or do it manually:
 1. Install zsh and repository:
 
     ```sh
-    sudo apt install zsh
+    sudo apt install zsh zsh-antidote fzf bat
 
     if [ -d "$HOME/.config/zsh" ] then;
         mv "$HOME/.config/zsh" "$HOME/.config/zsh.original"
