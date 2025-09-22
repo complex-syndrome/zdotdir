@@ -1,7 +1,8 @@
 #!/usr/bin/env zsh
 
-# NOTE: Existing kali prompt display settings (updated and documented)
-# Can be deleted safely / used to create custom prompt styles
+# NOTE: Inherited from kali default prompt settings (updated and documented)
+# Just a tutorial for creating custom prompt styles (or if you want to use it)
+# Not used (Name starts with '.', is hidden) and can be removed safely
 
 # Prompt format
 # %n                    => Username
@@ -24,7 +25,7 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
-precmd() {
+precmd() { # Runs everytime before a prompt appear
   print "" # Prompt \n spacing
 
   # Change terminal title dynamically

@@ -4,12 +4,12 @@
 #  https://antidote.sh
 #  https://github.com/mattmc3/antidote/tree/main
 
-export ANTIDOTE_HOME=$ZDOTDIR/.antidote_repos
-. /usr/share/zsh-antidote/antidote.zsh
+. $ANTIDOTE_ZSH
 antidote load
 
 # NOTE: Refer to .zsh_plugins.txt for plugins and settings format
 # Get all activated packages and their settings (if any) and source them
+# echo statements are left for debugging
 current_pkgs=($(awk '
   {gsub(/^[ \t]+|[ \t]+$/, "")}
   !/^#/ && NF {
@@ -25,7 +25,7 @@ current_pkgs=($(awk '
   }' "$ZDOTDIR/.zsh_plugins.txt"))
 
 for pkg in $current_pkgs; do
-  #echo "Found package $pkg"
+  # echo "Found package $pkg"
   file=$ZDOTDIR/settings/$pkg.zsh
   if [ -f $file ]; then
     . $file

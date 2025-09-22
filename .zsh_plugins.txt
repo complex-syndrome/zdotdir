@@ -19,12 +19,15 @@
 ## - sindresorhus/pure kind:fpath                         => sindresorhus/pure.zsh
 ## - ohmyzsh/ohmyzsh path:lib                             => ohmyzsh/ohmyzsh/lib.zsh
 ## - ohmyzsh/ohmyzsh path:plugins/command-not-found       => ohmyzsh/ohmyzsh/plugins/command-not-found.zsh
+##
+## *[Rq: xx] Plugin requires xx to be installed to be used
 
 
 ## IN USE
 zsh-users/zsh-autosuggestions kind:defer                  # Suggest commands
 zsh-users/zsh-syntax-highlighting                         # Syntax highlight (not deferred due to self defined theme)
-Aloxaf/fzf-tab                                            # Completions menu
+Aloxaf/fzf-tab                                            # Completions menu [rq: fzf]
+zsh-users/zsh-completions path:src kind:fpath             # Additional completions for commands
 
 fdellwing/zsh-bat                                         # cat with colors (Use rcat for original) [rq: bat]
 zsh-users/zsh-history-substring-search kind:defer         # Easier history search
@@ -39,9 +42,11 @@ ohmyzsh/ohmyzsh path:plugins/copypath                     # Copies $1's abs path
 ohmyzsh/ohmyzsh path:plugins/copyfile                     # Copies $1's file content
 ohmyzsh/ohmyzsh path:plugins/fancy-ctrl-z                 # Switch between background and foreground tasks
 
-zsh-users/zsh-completions path:src kind:fpath             # Additional completions for commands
+ohmyzsh/ohmyzsh path:plugins/themes                       # A collection of zsh prompt themes
 
-romkatv/zsh-bench kind:path                               # Benchmark
+romkatv/zsh-bench kind:path                               # Benchmark (run zsh-bench)
+
+# lukechilds/zsh-nvm kind:defer                           # Auto installs nvm (Node Version Manager) for npm
 
 
 ## UNUSED
@@ -49,15 +54,13 @@ romkatv/zsh-bench kind:path                               # Benchmark
 # zdharma-continuum/fast-syntax-highlighting kind:defer   # Extended, faster zsh-syntax-highlighting
 # zsh-users/zsh-history-substring-search kind:defer       # Easier history search
 
-# sindresorhus/pure kind:fpath                            # A zsh prompt style
-# romkatv/powerlevel10k kind:fpath                        # Another zsh prompt style
-# spaceship-prompt/spaceship-prompt                       # Another another zsh prompt style
-# ohmyzsh/ohmyzsh path:plugins/themes                     # Use OMZ themes
+# romkatv/powerlevel10k                                     # A zsh prompt theme
+# sindresorhus/pure kind:fpath                            # A zsh prompt theme
+# spaceship-prompt/spaceship-prompt                       # A zsh prompt theme
 
 # matthiasha/zsh-uv-env                                   # Auto checks uv project and activates the venv
-# lukechilds/zsh-nvm                                      # nvm - Node Version Manager
 
 # ohmyzsh/ohmyzsh path:lib                                # OMZ's lib, use it if some of your omz plugins have issues
-# mattmc3/zephyr                                          # Same author as antidote, similar to ohmyzsh's plugins, and simpler
+# mattmc3/zephyr                                          # Same author as antidote, plugin assortments
 
 # jeffreytse/zsh-vi-mode                                  # Vim keybinds for terminal

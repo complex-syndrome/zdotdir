@@ -1,7 +1,5 @@
 #!/usr/bin/env sh
 
-export EDITOR=nvim
-
 alias la='ls -al'
 alias cls=clear
 alias history="history 0"
@@ -9,8 +7,8 @@ alias fd='find . -type d -name'
 alias ff='find . -type f -name'
 alias update='sudo apt update && sudo apt upgrade -y'
 
-alias zshconfig="$EDITOR $ZDOTDIR"
-alias nvimconfig="$EDITOR ~/.config/nvim"
+alias zshconfig="pushd $ZDOTDIR &>/dev/null && $EDITOR . && popd &>/dev/null"
+alias nvimconfig="pushd ~/.config/nvim &>/dev/null && $EDITOR . && popd &>/dev/null"
 
 alias nv=nvim
 alias py=python3
