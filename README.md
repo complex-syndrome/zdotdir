@@ -12,7 +12,7 @@ Current functionalities include:
 - Addtional extensions for coding environments like nvm (Not installed by default)
 - Extensibility for other plugins to customize your own zsh
 
-Installation
+## Installation
 
 Or do it manually:
 
