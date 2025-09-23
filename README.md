@@ -21,11 +21,11 @@ Or do it manually:
     ```sh
     sudo apt install zsh zsh-antidote fzf bat
 
-    if [ -d "$HOME/.config/zsh" ] then;
+    if [ -d "$HOME/.config/zsh" ]; then
         mv "$HOME/.config/zsh" "$HOME/.config/zsh.original"
     fi
 
-    git clone $HOME/.config/zsh
+    git clone https://github.com/complex-syndrome/zdotdir $HOME/.config/zsh
     ```
 
 2. Backup your current config at .config/original/* (If exists)
