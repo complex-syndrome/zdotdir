@@ -14,8 +14,6 @@ Current functionalities include:
 
 ## Installation
 
-Or do it manually:
-
 1. Install zsh and repository:
 
     ```sh
