@@ -42,7 +42,6 @@ ohmyzsh/ohmyzsh path:plugins/copypath                     # Copies $1's abs path
 ohmyzsh/ohmyzsh path:plugins/copyfile                     # Copies $1's file content
 ohmyzsh/ohmyzsh path:plugins/fancy-ctrl-z                 # Switch between background and foreground tasks
 
-ohmyzsh/ohmyzsh path:plugins/themes                       # A collection of zsh prompt themes
 
 romkatv/zsh-bench kind:path                               # Benchmark (run zsh-bench)
 
@@ -54,9 +53,10 @@ romkatv/zsh-bench kind:path                               # Benchmark (run zsh-b
 # zdharma-continuum/fast-syntax-highlighting kind:defer   # Extended, faster zsh-syntax-highlighting
 # zsh-users/zsh-history-substring-search kind:defer       # Easier history search
 
-# romkatv/powerlevel10k                                     # A zsh prompt theme
+# romkatv/powerlevel10k                                   # A zsh prompt theme
 # sindresorhus/pure kind:fpath                            # A zsh prompt theme
 # spaceship-prompt/spaceship-prompt                       # A zsh prompt theme
+ohmyzsh/ohmyzsh path:plugins/themes                       # A collection of zsh prompt themes
 
 # matthiasha/zsh-uv-env                                   # Auto checks uv project and activates the venv
 

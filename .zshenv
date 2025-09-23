@@ -11,11 +11,11 @@ export EDITOR=nvim
 export ANTIDOTE_HOME=$ZDOTDIR/.antidote_repos
 export ANTIDOTE_ZSH=/usr/share/zsh-antidote/antidote.zsh  # Change this to your antidote.zsh location
 
-# For OMZ themes
-precmd() {  # Add a newline before between prompts
-  echo ""
-}
-export ZSH_THEME=agnoster
+# # For OMZ themes (Activate / Uncomment it at .zsh_plugins.txt first)
+# precmd() {  # Add a newline before between prompts
+#   echo ""
+# }
+# export ZSH_THEME=agnoster
 
 # export NVM_DIR=$ZDOTDIR/.nvm                      # For nvm plugin
 # export GOPATH=$HOME/.config/go                    # For golang
