@@ -2,3 +2,4 @@
 .antidote_repos
 .nvm
 original
+.zcompdump*

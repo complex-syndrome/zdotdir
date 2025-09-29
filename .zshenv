@@ -22,12 +22,11 @@ export ANTIDOTE_ZSH=/usr/share/zsh-antidote/antidote.zsh  # Change this to your 
 
 # uv python, comment this out if not using
 # https://docs.astral.sh/uv/getting-started/installation/#standalone-installer
-# if [ -f "$HOME/.local/bin/env" ]; then
-#   . "$HOME/.local/bin/env"
-# fi
+if [ -f "$HOME/.local/bin/env" ]; then
+  . "$HOME/.local/bin/env"
+fi
 
-# rust, comment this out if not using
-# curl https://sh.rustup.rs -sSf | sh
-# if [ -f "$HOME/.cargo/env" ]; then
-#   . "$HOME/.cargo/env"
-# fi
+# rust, comment this out if not using. Download by: curl https://sh.rustup.rs -sSf | sh
+if [ -f "$HOME/.cargo/env" ]; then
+  . "$HOME/.cargo/env"
+fi
