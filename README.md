@@ -17,7 +17,12 @@ Current functionalities include:
 1. Install zsh and repository:
 
     ```sh
+    # Ubuntu
     sudo apt install zsh zsh-antidote fzf bat
+
+    # Arch
+    sudo pacman -S zsh fzf bat
+    yay -S zsh-antidote
 
     if [ -d "$HOME/.config/zsh" ]; then
         mv "$HOME/.config/zsh" "$HOME/.config/zsh.original"
