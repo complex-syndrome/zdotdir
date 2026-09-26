@@ -1,5 +1,6 @@
 .zsh_plugins.zsh
 .antidote_repos
+.antidote
 .nvm
 original
 .zcompdump*

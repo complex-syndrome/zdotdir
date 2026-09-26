@@ -34,7 +34,7 @@ zsh-users/zsh-history-substring-search kind:defer         # Easier history searc
 
 getantidote/use-omz                                       # OMZ's dependency standardizer (https://github.com/getantidote/use-omz)
 ohmyzsh/ohmyzsh path:plugins/command-not-found            # Recommends installation if command not found
-ohmyzsh/ohmyzsh path:plugins/magic-enter                  # Provides use for empty input
+# ohmyzsh/ohmyzsh path:plugins/magic-enter                  # Provides use for empty input
 ohmyzsh/ohmyzsh path:plugins/extract                      # Dynamically extract files
 ohmyzsh/ohmyzsh path:plugins/colored-man-pages            # Vibrant man pages
 ohmyzsh/ohmyzsh path:plugins/dirhistory                   # ALT + arrows to change between directories

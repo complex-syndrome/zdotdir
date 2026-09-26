@@ -9,16 +9,16 @@ export ZDOTDIR=$HOME/.config/zsh
 # Some exports
 export EDITOR=nvim
 export ANTIDOTE_HOME=$ZDOTDIR/.antidote_repos
-export ANTIDOTE_ZSH=/usr/share/zsh-antidote/antidote.zsh  # Change this to your antidote.zsh location
+export ANTIDOTE_ZSH=$ZDOTDIR/.antidote/antidote.zsh  # Change this to your antidote.zsh location
 
 # # For OMZ themes (Activate / Uncomment it at .zsh_plugins.txt first)
-# precmd() {  # Add a newline before between prompts
-#   echo ""
-# }
-# export ZSH_THEME=agnoster
+precmd() {  # Add a newline before between prompts
+  echo ""
+}
+export ZSH_THEME=rkj-repos
 
-# export NVM_DIR=$ZDOTDIR/.nvm                      # For nvm plugin
-# export GOPATH=$HOME/.config/go                    # For golang
+export NVM_DIR=$ZDOTDIR/.nvm                      # For nvm plugin
+export GOPATH=$HOME/.config/go                    # For golang
 
 # uv python, comment this out if not using
 # https://docs.astral.sh/uv/getting-started/installation/#standalone-installer
@@ -30,3 +30,9 @@ fi
 if [ -f "$HOME/.cargo/env" ]; then
   . "$HOME/.cargo/env"
 fi
+
+chpwd() {
+	if [[ -d .venv ]]; then
+		source .venv/bin/activate
+	fi
+}
